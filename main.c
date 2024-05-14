@@ -1,12 +1,13 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
+#include <Windows.h>
 //my infos
 int life = 30;//life of me
 int att1 = 3;//attack point of me
 int dfc1 = 1;//defence point of me
 //enemy info
-int juck = 35;
+int juck = 33;
 int att2 = 3;
 int dfc2 = 2;
 int game(void) {
@@ -37,6 +38,8 @@ int game(void) {
     }
 
     printf("\n");
+    Sleep(1000);
+    system("cls");
     return game();
 }
 
